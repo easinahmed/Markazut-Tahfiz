@@ -1,9 +1,13 @@
+import Hero from "../components/sections/Hero";
 
 
-const Home:React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="min-h-screen bg-white">
+      
+      <Hero/>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

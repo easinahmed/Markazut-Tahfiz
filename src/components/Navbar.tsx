@@ -33,6 +33,7 @@ const Navbar: React.FC = () => {
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                 <img src="logo.jpg" alt="markazut tahfiz logo" />
               </div>
+              <h3 className="font-bold text-4xl font-arabic">المركز</h3>
             
           </div>
 
@@ -42,12 +43,12 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
+                className="text-gray-700 relative afterNav hover:text-hover font-medium transition-colors"
               >
                 {item.label}
               </Link>
             ))}
-            <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition-colors">
+            <button className=" bg-[#78A083] hover:bg-hover cursor-pointer text-white px-6 py-2 rounded-full transition-colors">
               আবেদন করুন
             </button>
           </div>
@@ -73,7 +74,7 @@ const Navbar: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition-colors">
+            <button className="w-full mt-4 bg-[#78A083] hover:bg-hover text-white px-6 py-2 rounded-lg transition-colors">
               আবেদন করুন
             </button>
           </div>

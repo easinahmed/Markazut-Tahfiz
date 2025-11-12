@@ -1,17 +1,19 @@
+import { bg } from "../../constant/constant";
+
 // Hero Component
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-[600px] bg-linear-to-br from-blue-900 via-blue-800 to-blue-900">
+    <div className="relative w-full min-h-[700px] bg-linear-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background Image Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-40"
         style={{
-          backgroundImage: "url('logo.jpg')"
+          backgroundImage: `url(${bg})`
         }}
       />
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-20">
+      <div className="relative w-full flex items-center justify-center  container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             আন্তর্জাতিক হিফজ শিক্ষা প্রতিষ্ঠান এখন আপনার হাতের কাছে!
@@ -23,7 +25,7 @@ const Hero: React.FC = () => {
                                     
           </p>
 
-          <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors inline-flex items-center gap-2">
+          <button className="bg-[#78A083] hover:bg-[#344955] cursor-pointer text-white px-8 py-4 rounded-full text-lg font-medium transition-all hover:scale-110 duration-500 inline-flex items-center gap-2">
             আমাদের সম্পর্কে
           </button>
         </div>

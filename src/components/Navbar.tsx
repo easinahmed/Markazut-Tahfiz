@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     { label: 'হোম', href: '/' },
     { label: 'আমাদের সম্পর্কে', href: '/about' },
-    // { label: 'নোটিশ', href: '/notice' },
+    { label: 'নোটিশ', href: '/notice' },
     { label: 'বিভাগ সমূহ', href: '/departments' },
     { label: 'ভর্তি', href: '/admission' },
     { label: 'লগইন', href: '/login' },

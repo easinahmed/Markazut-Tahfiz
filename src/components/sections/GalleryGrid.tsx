@@ -66,7 +66,7 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ title, subtitle, images }) =>
           onClick={() => setSelectedImage(null)}
         >
           <div
-            className="relative max-w-4xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
+            className="relative w-5xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}

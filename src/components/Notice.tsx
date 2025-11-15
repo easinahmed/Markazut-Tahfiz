@@ -10,10 +10,10 @@ const Notice: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#344955] text-white py-3 relative overflow-hidden">
+    <div className="bg-hover text-white py-3 relative overflow-hidden">
       <div className="container mx-auto px-4 flex items-center gap-4">
         {/* Notice Badge */}
-        <div className="bg-[#78A083] text-white px-4 py-2 rounded font-bold whitespace-nowrap shrink-0">
+        <div className="bg-button text-white px-4 py-2 rounded font-bold whitespace-nowrap shrink-0">
           লেটেস্ট নোটিশ
         </div>
 
@@ -26,49 +26,13 @@ const Notice: React.FC = () => {
           >
             {[...newsItems, ...newsItems].map((item, index) => (
               <div key={index} className="flex items-center gap-4 whitespace-nowrap">
-                <span className="text-[#78A083]">●</span>
+                <span className="text-button">●</span>
                 <span className="text-lg hover:scale-105 transition-all duration-500 cursor-pointer">{item}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Control Buttons */}
-        <div className="flex items-center gap-2 flex-shrink-0">
-          <button
-            onClick={() => setIsPaused(true)}
-            className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded transition-colors"
-            aria-label="Previous"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-          <button
-            onClick={() => setIsPaused(!isPaused)}
-            className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded transition-colors"
-            aria-label={isPaused ? "Play" : "Pause"}
-          >
-            {isPaused ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="black">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="black">
-                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-              </svg>
-            )}
-          </button>
-          <button
-            onClick={() => setIsPaused(true)}
-            className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded transition-colors"
-            aria-label="Next"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </div>
       </div>
 
       <style>{`
